@@ -42,6 +42,8 @@ function prepare() {
   if (!version) error("not found 'version' field in package.json."), exit(1);
   let nextVersions = types.map(t => [t, inc(version, t, preid)])
 
+  if (!existsSync(join(cwd, '.git'))) error("not found .git/."), exit(1);
+
   let npm
   if (existsSync(join(cwd, 'package-lock.json'))) {
     npm = 'npm'
