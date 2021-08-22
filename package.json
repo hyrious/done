@@ -1,0 +1,23 @@
+{
+  "name": "@hyrious/done",
+  "version": "0.1.0",
+  "description": "A command line tool to help standardize release.",
+  "main": "index.js",
+  "types": "index.d.ts",
+  "bin": {
+    "done": "bin.js",
+    "npm-done": "bin.js"
+  },
+  "keywords": [
+    "cli",
+    "git",
+    "npm",
+    "release",
+    "version"
+  ],
+  "author": "hyrious <hyrious@outlook.com>",
+  "license": "MIT",
+  "dependencies": {
+    "semver": "^7.3.5"
+  }
+}
